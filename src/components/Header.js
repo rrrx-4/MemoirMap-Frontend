@@ -100,11 +100,11 @@ const Header = () => {
                                     <p className='header-text' onClick={handleLogout}>Logout</p>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
-                        ) : <MDBNavbarItem>
+                        ) : (<MDBNavbarItem>
                             <MDBNavbarLink href='/login'>
                                 <p className='header-text'>Login</p>
                             </MDBNavbarLink>
-                        </MDBNavbarItem>}
+                        </MDBNavbarItem>)}
 
 
                     </MDBNavbarNav>
