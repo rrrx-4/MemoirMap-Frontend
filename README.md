@@ -1,3 +1,10 @@
+Developed a social media application using MERN Stack, for documenting and sharing travel experiences, featuring user accounts, CRUD operations, image uploads, and advanced functionalities such as likes, comments, search & pagination
+            The frontend of the application was built using React  Redux-Toolkit , which provided a seamless and intuitive user interface. The state management was handled efficiently byRedux-Toolkit.
+          On the backend, the application was built using  Node.js, Express, Mongoose, & JWT for user authentication. The application also includes Google Authentication  to provide an additional option for users to sign up. The data was stored in a  MongoDB database
+
+live : https://comforting-malabi-d53b1c.netlify.app/
+Backend github-repo : https://github.com/rrrx-4/MemoirMap-Server
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
