@@ -2,7 +2,12 @@ import axios from "axios"
 
 
 
-const API = axios.create({ baseURL: "https://memoirmap-server.onrender.com" })
+const API = axios.create({
+    baseURL: "https://memoirmap-server.onrender.com"
+})
+// console.log(process.env.DB_URL);
+
+// const API = axios.create({ baseURL: "http://localhost:3000" })
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('Profile')) {

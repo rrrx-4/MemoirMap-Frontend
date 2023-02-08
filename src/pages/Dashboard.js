@@ -32,7 +32,7 @@ const Dashboard = () => {
 
     const excerpt = (str) => {
         if (str.length > 40) {
-            str = str.subString(0, 40) + ' ...'
+            str = str.substring(0, 40) + ' ...'
         }
         return str;
     }
@@ -57,7 +57,7 @@ const Dashboard = () => {
             {userTours.length > 0 && (
                 <>
                     <h4 className='text-center'>Dashboard: {user?.result?.name}</h4>
-                    <hr style={{ maxWidth: "570px" }}>  </hr>
+                    {/* <hr style={{ maxWidth: "570px" }}>  </hr> */}
                 </>
             )}
 

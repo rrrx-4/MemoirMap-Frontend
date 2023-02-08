@@ -14,7 +14,7 @@ import {
 import { setLogout } from '../redux/features/authSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { searchTours } from '../redux/features/tourSlice'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Header = () => {
@@ -83,27 +83,31 @@ const Header = () => {
                         {user?.result?._id && (
                             <>
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink href='/addTour'>
-                                        <p className='header-text'>Add Tour</p>
-                                    </MDBNavbarLink>
+                                    <Link to='/addTour' >
+                                        <MDBNavbarLink href='/addTour'>
+                                            <p className='header-text'>Add Tour</p>
+                                        </MDBNavbarLink></Link>
                                 </MDBNavbarItem>
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink href='/dashboard'>
-                                        <p className='header-text'>Dashboard</p>
-                                    </MDBNavbarLink>
+                                    <Link to='/dashboard' >
+                                        <MDBNavbarLink href='/dashboard'>
+                                            <p className='header-text'>Dashboard</p>
+                                        </MDBNavbarLink></Link>
                                 </MDBNavbarItem>
                             </>
                         )}
                         {user?.result?._id ? (
                             <MDBNavbarItem>
-                                <MDBNavbarLink href='/login'>
-                                    <p className='header-text' onClick={handleLogout}>Logout</p>
-                                </MDBNavbarLink>
+                                <Link to='/login' >
+                                    <MDBNavbarLink href='/login'>
+                                        <p className='header-text' onClick={handleLogout}>Logout</p>
+                                    </MDBNavbarLink></Link>
                             </MDBNavbarItem>
                         ) : (<MDBNavbarItem>
-                            <MDBNavbarLink href='/login'>
-                                <p className='header-text'>Login</p>
-                            </MDBNavbarLink>
+                            <Link to='/login' >
+                                <MDBNavbarLink href='/login'>
+                                    <p className='header-text'>Login</p>
+                                </MDBNavbarLink></Link>
                         </MDBNavbarItem>)}
 
 

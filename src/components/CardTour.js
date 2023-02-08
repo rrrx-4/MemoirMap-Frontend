@@ -14,7 +14,7 @@ export const CardTour = ({ imageFile, description, title, tags, _id, name, likes
 
     const excerpt = (str) => {
         if (str.length > 45) {
-            str = str.subString(0, 45) + ' ...'
+            str = str.substring(0, 45) + ' ...'
         }
         return str;
     }
