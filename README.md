@@ -2,7 +2,7 @@ Developed a social media application using MERN Stack, for documenting and shari
             The frontend of the application was built using React  Redux-Toolkit , which provided a seamless and intuitive user interface. The state management was handled efficiently byRedux-Toolkit.
           On the backend, the application was built using  Node.js, Express, Mongoose, & JWT for user authentication. The application also includes Google Authentication  to provide an additional option for users to sign up. The data was stored in a  MongoDB database
 
-live : https://comforting-malabi-d53b1c.netlify.app/
+live : https://memoirmap.netlify.app/
 Backend github-repo : https://github.com/rrrx-4/MemoirMap-Server
 
 # Getting Started with Create React App
